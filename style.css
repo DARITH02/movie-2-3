@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: #010514;
+  color: #eee;
+}
+:root {
+  --text-light: white;
+}
+
+h1,
+h2 {
+  font-size: 2.2rem;
+}
+span {
+  display: inline-block;
+}
+
+.container {
+  max-width: 90%;
+  background-color: red;
+  margin: auto;
+}
+.bg {
+  width: 100%;
+  /* height: 100vh; */
+  background-image: url("./images/hero-bg.png");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content {
+  height: 500px;
+  /* background-color: red; */
+}
+.logo {
+  margin: 7rem;
+  /* background-color: red; */
+}
+.poster {
+  width: 100%;
+  height: 300px;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+}
+.txt-movie {
+  margin-top: 3rem;
+}
+.txt-movie > span {
+  font-size: 4.8rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1;
+}
+
+.txt-movie > span > span {
+  color: blueviolet;
+}
+.input-group {
+  width: 90%;
+  height: 45px;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.input-group span {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-group input {
+  display: block;
+  width: 90%;
+  height: 100%;
+  font-size: 2.2rem;
+  border: none;
+  background-color: transparent;
+  color: #eee;
+}
+.input-group input:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .poster {
+    width: 60%;
+    height: 300px;
+  }
+
+  .poster img {
+    width: 100%;
+    height: 100%;
+  }
+  .txt-movie {
+    width: 60%;
+
+    /* background-color: red; */
+    margin-top: 3.5rem;
+  }
+  .input-group {
+    width: 45%;
+    height: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .poster {
+    width: 35%;
+    height: 300px;
+  }
+
+  .poster img {
+    width: 100%;
+    height: 100%;
+  }
+  .txt-movie {
+    width: 40%;
+
+    /* background-color: red; */
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+}
