@@ -107,6 +107,28 @@ span {
   outline: none;
 }
 
+.container-width {
+  max-width: 90%;
+  margin: auto;
+}
+.main-section {
+  margin-top: 5rem;
+}
+.txt-popular {
+  font-size: 3rem;
+}
+.grid-section {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.items {
+  height: 350px;
+  background-color: blue;
+}
+
 @media (min-width: 768px) {
   .poster {
     width: 60%;
@@ -125,7 +147,16 @@ span {
   }
   .input-group {
     width: 45%;
-    height: 45px;
+    height: 70px;
+  }
+
+  .txt-popular {
+    font-size: 5rem;
+  }
+  .grid-section {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
@@ -144,6 +175,9 @@ span {
 
     /* background-color: red; */
     margin-top: 3.5rem;
+  }
+  .grid-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
